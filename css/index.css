@@ -2,9 +2,6 @@
    v2.0 | 20110126
    License: none (public domain)
 */
-body {
-  background: palevioletred;
-}
 html,
 body,
 div,
@@ -136,4 +133,354 @@ table {
 html,
 body {
   height: 100%;
+}
+.blackTheme {
+  background: black;
+  color: white;
+}
+.darkTheme {
+  background: #181A17;
+  color: #F5F5F5;
+}
+.flexColWrap {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+.flexRowNowrap {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+}
+.blkBorderBottom {
+  border-bottom: 1px solid black;
+}
+.textShadow {
+  text-shadow: 1px 2px 15px palevioletred,
+	1px 2px 1px black;
+}
+.dottedBorderBottom {
+  border-bottom: 2px dotted white;
+}
+.fontGame {
+  font-family: 'VT323', monospace;
+}
+.bgImage {
+  background-image: url(../img/codeBanner.jpeg);
+}
+body {
+  background: #181A17;
+  color: #F5F5F5;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: stretch;
+  width: 80vw;
+  margin: 0 auto;
+}
+.first {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-content: space-between;
+  width: 100%;
+}
+.header {
+  border-bottom: 2px dotted white;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-evenly;
+  width: 100%;
+}
+.profile {
+  max-width: 100%;
+  opacity: 50%;
+  height: auto;
+}
+.slogan {
+  flex-grow: 1;
+  background-image: url(../img/codeBanner.jpeg);
+  text-shadow: 1px 2px 15px palevioletred,
+	1px 2px 1px black;
+  text-align: center;
+  color: white;
+  padding: 5% 0;
+  height: 30vh;
+  background-size: cover;
+  background-position: center;
+  background-blend-mode: #F5F5F5;
+}
+.slogan h1 {
+  font-size: 4.5em;
+  font-family: 'VT323', monospace;
+}
+.slogan h2 {
+  color: #F5F5F5;
+  font-size: 1.5em;
+  font-family: 'Quicksand', sans-serif;
+}
+/* navigation bar */
+.navigation {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-items: stretch;
+  align-items: center;
+  padding: 10px 3% 10px 1%;
+  height: 10vh;
+}
+.navigation a {
+  flex-grow: 1;
+  color: gray;
+  text-align: center;
+  text-decoration: none;
+}
+a {
+  text-decoration: none;
+  color: white;
+}
+a:hover {
+  text-shadow: 1px 2px 15px palevioletred,
+	1px 2px 1px black;
+}
+.anchors {
+  width: 100%;
+  display: flex;
+  align-items: stretch;
+  align-items: left;
+}
+.anchors a {
+  flex-grow: 1;
+  text-align: center;
+}
+button:hover {
+  background-color: black;
+  color: white;
+}
+.blog {
+  background: black;
+  color: white;
+  padding: 0 5%;
+}
+.blog p {
+  font-family: 'Rajdhani', sans-serif;
+  font-size: 0.8em;
+  line-height: 1.3em;
+  color: #c2c7ca;
+  margin: 1vw 0 0 0;
+}
+.contentHalf h1,
+.onethird h1 {
+  font-family: 'VT323', monospace;
+  font-size: 1.5em;
+}
+.firstContent {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-items: center;
+}
+.contentHalf {
+  padding: 3% 1% 2% 0%;
+  font-size: 1em;
+}
+.middle-img {
+  width: 100%;
+}
+.content2 {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  flex-grow: 1;
+  width: 100%;
+  padding: 3% 0 3% 0;
+}
+.onethird {
+  margin: 1% 1% 1% 0;
+  font-size: 1em;
+}
+.onethird h1 {
+  font-family: 'VT323', monospace;
+}
+.contact {
+  width: 100%;
+  text-align: left;
+}
+address,
+phone,
+email {
+  display: block;
+}
+phone {
+  padding: 15px 0;
+}
+footer {
+  padding: 3% 0;
+  width: 100%;
+  text-align: center;
+}
+.content1 {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  align-content: space-between;
+  padding: 25px 0;
+  width: 100%;
+  height: 100vh;
+}
+.row {
+  display: flex;
+  justify-content: space-between;
+}
+.half {
+  border: 1px solid gray;
+  border-radius: 5px;
+  padding: 15px;
+  margin: 5px 0px 30px 0;
+  font-size: 12px;
+  line-height: 15px;
+  background-color: #f2f2f2;
+  max-width: 48%;
+  order: 1;
+  opacity: 80%;
+}
+.small {
+  background-color: ivory;
+  border-radius: 5px;
+  font-size: 12px;
+  margin: 10px 0 10px 0;
+}
+.small:hover {
+  background-color: lemonchiffon;
+  color: #be3737;
+}
+.container {
+  width: 880px;
+  margin: 0 auto;
+  font-size: 12px;
+  line-height: 15px;
+}
+.bottom {
+  display: flex;
+  justify-content: space-between;
+  padding: 30px 0;
+}
+li {
+  line-height: 1.5em;
+}
+.logo:hover {
+  box-shadow: 0px 0px 0 #1c9dd0, 1px 1px 0 #1a52a5, 2px 2px 0 #7964f2, 3px 3px 0 #a7e3de, 4px 4px 0 #6fb63f, 5px 5px 0 #a17532, 6px 6px 0 #a7e3de, 7px 7px 0 #1a52a5, 8px 8px 0 #7964f2, 9px 9px 0 #a7e3de, 10px 10px 0 #6fb63f;
+}
+/* tablet view */
+@media (max-width: 768px) {
+  body {
+    font-size: 12px;
+  }
+  .navigation {
+    width: 100%;
+    text-align: center;
+    display: flex;
+    flex-direction: column-reverse;
+    flex-wrap: wrap;
+    height: 10vh;
+  }
+  .anchors {
+    width: 100%;
+    display: flex;
+    align-items: stretch;
+    align-items: center;
+    margin-top: 5%;
+  }
+  .anchors a {
+    flex-grow: 1;
+    text-align: center;
+  }
+  .profile {
+    display: none;
+  }
+  button {
+    background-color: white;
+    font-size: 12px;
+  }
+  .firstContent {
+    margin-top: 5%;
+    border-top: 2px solid black;
+  }
+  .content2 {
+    border-bottom: 2px solid black;
+    margin-bottom: 5%;
+  }
+}
+@media (max-width: 400px) {
+  body {
+    font-size: 10px;
+    width: 100%;
+    margin: 0;
+  }
+  .navigation {
+    width: 100%;
+    text-align: center;
+    display: flex;
+    flex-direction: column-reverse;
+    flex-wrap: wrap;
+    padding: 0;
+  }
+  .anchors {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    align-items: center;
+    margin-top: 5%;
+    border-bottom: 1px solid gray;
+  }
+  .anchors a {
+    flex-grow: 1;
+    text-align: center;
+    color: gray;
+    width: 100%;
+    border-top: 1px solid gray;
+    padding: 4% 0;
+  }
+  .logo {
+    padding: 4% 0 0 0;
+  }
+  button {
+    background-color: white;
+    font-size: 12px;
+  }
+  .header {
+    border-bottom: none;
+  }
+  .firstContent {
+    margin-top: 5%;
+    border-top: 2px solid black;
+    display: flex;
+    flex-direction: column;
+  }
+  .content2 {
+    display: flex;
+    flex-direction: column;
+    border-bottom: 2px solid black;
+    margin-bottom: 5%;
+  }
+  .header h1 {
+    font-size: 30px;
+  }
+  .contentHalf {
+    flex-grow: 1;
+    padding: 5%;
+  }
+  .onethird {
+    flex-grow: 1;
+    padding: 5%;
+  }
+  .contact {
+    padding: 5%;
+  }
+  body {
+    color: white;
+  }
 }
