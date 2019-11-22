@@ -177,6 +177,7 @@ body {
   align-items: stretch;
   width: 80vw;
   margin: 0 auto;
+  text-align: justify;
   padding-bottom: 10vh;
 }
 .first {
@@ -400,6 +401,10 @@ li {
   }
   .profile {
     display: none;
+  }
+  .slogan h1 {
+    font-size: 3.5em;
+    font-family: 'VT323', monospace;
   }
   button {
     background-color: white;
